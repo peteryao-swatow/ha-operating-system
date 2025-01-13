@@ -22,6 +22,7 @@ if [ "${BOARD_ID}" == "ihost" ]; then
 fi
 
 # Write os-release
+# shellcheck disable=SC2153
 (
     echo "NAME=\"${HASSOS_NAME}\""
     echo "VERSION=\"$(hassos_version) (${BOARD_NAME})\""
