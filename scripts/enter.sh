@@ -26,6 +26,6 @@ sudo losetup -f > /dev/null
 
 # shellcheck disable=SC2086
 sudo docker run -it --rm --privileged \
-  -v "$(pwd):/build" -v "${CACHE_DIR}:/cache" \
+  -v "$(pwd):/build" -v "${CACHE_DIR}:/cache" -v "/home/peter/workspace_external/projects/cube/u-boot-for-ihost:/u-boot" \
   -e BUILDER_UID="${BUILDER_UID}" -e BUILDER_GID="${BUILDER_GID}" \
   hassos:local ${COMMAND}
