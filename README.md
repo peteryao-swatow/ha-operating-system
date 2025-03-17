@@ -29,6 +29,14 @@ Home Assistant Operating System (a.k.a. Hass.io/Hassio formerly HassOS) is a Lin
   - https://itead.cc/product/sonoff-ihost-smart-home-hub/
   - https://sonoff.tech/product/gateway-and-sensors/ihost/
 
+## Build
+
+```bash
+> ./scripts/enter.sh
+> make BR2_EXTERNAL=./buildroot-ihost:./buildroot-external O=output/ihost ihost
+```
+
+
 ## Wiki and community discussions
 
 - https://github.com/darkxst/ha-operating-system/wiki/HAOS-on-Sonoff-iHost
